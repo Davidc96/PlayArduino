@@ -1,10 +1,10 @@
 #ifndef NPC_H
 #define NPC_H
-#include "Unit.h"
+#include "../Unit.h"
 class NPC : public Unit{
 	public:
 		NPC(int X, int Y, char graph);
-		//~NPC();
+		~NPC();
 		virtual void IAmovement();
 		void setDirectionX(int dirX);
 		void setDirectionY(int dirY);

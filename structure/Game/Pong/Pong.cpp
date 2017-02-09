@@ -1,6 +1,6 @@
 #include "Pong.h"
 
-Pong::Pong() : Game()
+Pong::Pong()
 {
 	
 	m_tv = TVOutSingleton::getInstance()->getTVOut();

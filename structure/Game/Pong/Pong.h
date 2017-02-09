@@ -1,6 +1,6 @@
 #ifndef PONG_H
 #define PONG_H
-#include "Game.h"
+#include "../Game.h"
 class Pong : public Game
 {
 	public:

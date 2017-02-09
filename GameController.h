@@ -9,6 +9,7 @@ class GameController
 	private:
 		void createGame(int type);
 		TVout m_tv;
+    void printMainMenu();
     	
 
 

@@ -1,11 +1,11 @@
 #ifndef GAME_H
 #define GAME_H
 #include "Arduino.h"
-#include "TVOutSingleton.h"
-#include "Unit.h"
-#include "Player.h"
-#include "NPC.h"
-#include "Ball.h"
+#include "../TVOutSingleton.h"
+#include "../Unit/Unit.h"
+#include "../Unit/Player/Player.h"
+#include "../Unit/NPC/NPC.h"
+#include "../Unit/NPC/Ball/Ball.h"
 #define MAX_UNIT_SIZE          20
 //------------Input Pin------
 #define BUTTON_A_PORT          13
@@ -20,20 +20,19 @@
 class Game
 {
 	public:
-		Game(){};
+		Game();
 		~Game();
-		virtual void menu() = 0;
-		virtual void run() = 0;
-		virtual void backGround() = 0;
-		virtual void movePlayer() = 0;
-		virtual void moveUnit() = 0;
-		virtual void moveIA() = 0;
+		virtual void menu();
+		virtual void run();
+		virtual void backGround();
+		virtual void movePlayer();
+		virtual void moveUnit();
+		virtual void moveIA();
 	protected:
 		Unit m_unit[MAX_UNIT_SIZE];
 		TVout m_tv;
 //		TVOutSingleton* m_tvSing;
 
 };
-
 #endif
 

@@ -3,7 +3,6 @@
 class Unit
 {
 	public:
-		Unit(){}
 		Unit(int sX, int sY, char graph = ' ');
 		~Unit();
 		void setX(int nX);

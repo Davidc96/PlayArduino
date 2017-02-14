@@ -3,7 +3,7 @@ TVOutSingleton* TVOutSingleton::m_sing = NULL;
 TVOutSingleton::TVOutSingleton(){
 	//TV BEGIN
   m_tv.begin(PAL, 120, 96);
-  m_tv.select_font(font6x8);
+  m_tv.select_font(font4x6);
   
 }
 TVOutSingleton::~TVOutSingleton(){}

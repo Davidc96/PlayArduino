@@ -23,11 +23,14 @@ GameController::~GameController(){
 }
 void GameController::printMainMenu()
 {
+  m_tv.select_font(font6x8);
   m_tv.println("--------MENU-------");
+  m_tv.select_font(font4x6);
   m_tv.println("\n");
-  m_tv.print(10, 20, "SPACEINVADERS");
-  m_tv.print(10, 40, "PONG");
+  m_tv.print(10, 20, "PONG");
+  m_tv.print(10, 40, "SPACEINVADERS");
   m_tv.print(0, 70, "USA LOS BOTONES ARRIBA Y ABAJO");
+  m_tv.select_font(font6x8);
   m_tv.print(0, 88, "PULSE A PARA JUGAR");
 }
 void GameController::mainMenu()
@@ -63,11 +66,11 @@ void GameController::createGame(int type)
 	switch(type)
 	{
 		case 0:
-               {
-	          Pong *pong = new Pong();
-		  pong->run();
-	          break;
-                }
+    {
+			Pong *pong = new Pong();
+			pong->run();
+			break;
+    }
 		default:
 			break;
 	}

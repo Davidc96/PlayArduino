@@ -63,11 +63,11 @@ void GameController::createGame(int type)
 	switch(type)
 	{
 		case 0:
-    {
-			Pong *pong = new Pong();
-			pong->run();
-			break;
-    }
+               {
+	          Pong *pong = new Pong();
+		  pong->run();
+	          break;
+                }
 		default:
 			break;
 	}
